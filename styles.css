@@ -227,23 +227,50 @@ figcaption {
 .contact-form {
 	color: var(--white);
 	background-color: var(--black);
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .form-field {
 	display: flex;
 	flex-direction: column;
-	margin-left: auto;
-	margin-right: auto;
+	text-align: left;
 }
 
 .form-field input {
-	width: 60%;
+	width: 350px;
+	margin-bottom: 15px;
+	padding: 7px;
+}
+
+.form-field ::placeholder {
+	color: var(--teal);
+	font-weight: bold;
+}
+
+.form-field label {
+	margin-left: 5px;
+}
+
+form > input {
+	background-color: var(--teal);
+	border-radius: 10px;
+	color: var(--white);
+	padding: 5px 50px;
+	font-weight: bold;
+	border: none;
+	margin-bottom: 50px;
 }
 
 footer{
 	text-align: center;
 	color: white;
-    background-color: black;
+    background-color: var(--black);
+	padding-bottom: 15px;
 }
 
 header{
@@ -256,8 +283,6 @@ header{
 	grid-template-columns: repeat(1, 1fr);
 	margin: 0 75px;
 }
-
-
 
 li a {
 	width: 350px;
