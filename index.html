@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <title>title</title>
-        <link rel="stylesheet" href="styles.css">    
+        <link rel="stylesheet" href="styles.css">   
+        <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
     <body>
 
@@ -17,89 +18,96 @@
                     <li><a href="#top" class="btt">TOP</a></li>
                 </ul>
             </nav>
-
         </header>
 
         <main>
-
             <section id="">
-                <h2>About</h2>
-                <p>Hello! 
-                    I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
+                <h2>ABOUT</h2>
+                <p>Hello!</p>
+                    <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
 
-            <section id="">
-               <h2>Gallery</h2>
+            <section id="gallery">
+               <h2>GALLERY</h2>
                 <p>Here are some highlights of my work. The locations and year are in the caption. </p>
 
                 <figure>
                     <img src="images/Chile.png" alt="">
-                    <figcaption>Chile, 2001</figcaption>
+                    <figcaption id="chile-fig">CHILE, 2001</figcaption>
                 </figure>
                 <figure>
                     <img src="images/Guatemala.png" alt="">
-                    <figcaption>Guatemala, 1997</figcaption>
+                    <figcaption id="guatemala-fig">GUATEMALA, 1997</figcaption>
                 </figure>
                 <figure>
                     <img src="images/Hawaii.png" alt="">
-                    <figcaption>Hawaii, 2010
-                    </figcaption>
+                    <figcaption id="hawaii-fig">HAWAII, 2010</figcaption>
                 </figure>
                 <figure>
                     <img src="images/Iran.png" alt="">
-                    <figcaption>Iran, 1999<figcaption>
+                    <figcaption id="iran-fig">IRAN, 1999<figcaption>
                 </figure>
                 <figure>
                     <img src="images/Ireland.png" alt="">
-                    <figcaption>Ireland, 2012</figcaption>
+                    <figcaption id="ireland-fig">IRELAND, 2012</figcaption>
                 </figure>
                 <figure>
                     <img src="images/Italy.png" alt="">
-                    <figcaption>Italy, 2015</figcaption>
+                    <figcaption id="italy-fig">ITALY, 2015</figcaption>
                 </figure>
                 <figure>
                     <img src="images/Moab-Desert.png" alt="">
-                    <figcaption>Moab Desert, 2020</figcaption>
+                    <figcaption id="moab-fig">MOAB DESERT, 2020</figcaption>
                 </figure>
                 <figure> 
                     <img src="images/Rocky-Mountains.png" alt="">
-                    <figcaption>Rocky Mountains, 2009</figcaption>
+                    <figcaption id="rocky-fig">ROCKY MOUNTAINS, 2009</figcaption>
                 </figure>
                 <figure>
                     <img src="images/Switzerland.png" alt="">
-                    <figcaption>Switzerland, 2014</figcaption> 
+                    <figcaption id="switzerland-fig">SWITZERLAND 2014</figcaption> 
                 </figure>
                 <figure>
                     <img src="images/UK.png" alt="">
-                    <figcaption>UK, 2005</figcaption>
+                    <figcaption id="uk-fig">UK, 2005</figcaption>
                 </figure>
                 <figure>
                     <img src="images/USA.png" alt="">
-                    <figcaption>USA, 2021</figcaption>
+                    <figcaption id="usa-fig">USA, 2021</figcaption>
                 </figure>
                 <figure>
                     <img src="images/Wyoming.png" alt="">
-                    <figcaption>Wyoming, 2021</figcaption>
+                    <figcaption id="wyoming-fig">WYOMING, 2021</figcaption>
                 </figure>
-                
             </section>
-
-            <section>
-                <h2>Contact</h2>
-                <p>Please fill out this form and I’ll connect with you soon.</p>
-                
-                
-                
-                Your contact information
-                Name (Your full name)
-                Email (Enter your email address)
-                Message (What can I help you with?)
-                Submit
-            </section>
-
         </main>
+        
+        <div class="contact-form">
+            <h2>CONTACT</h2>
+            <p>Please fill out this form and I’ll connect with you soon.</p>
+
+            <form>
+                <div class="form-field">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" name="name" placeholder="YOUR FULL NAME">
+                </div>
+          
+                <div class="form-field">
+                    <label for="email">EMAIL</label>
+                    <input type="text" id="email" name="email" placeholder="ENTER YOUR EMAIL ADDRESS">
+                </div>
+                
+                <div class="form-field">   
+                    <label for="message">MESSAGE</label>
+                    <input id="message" name="message" placeholder="WHAT CAN I HELP YOU WITH?"></input>
+                </div>
+
+              <input type="submit" value="SUBMIT">
+            </form>
+            
+        </div>
 
         <footer>
-            <p><small>Copyright 2021 TK Photography</p></small>
+            <p><small>Copyright 2021 TK Photography</small></p>
         </footer>
     </body>
 </html>
