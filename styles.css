@@ -62,8 +62,6 @@ table {
 
 
 /*-------------------- GLOBAL STYLES (mobile first/small) --------------------*/
-
-
 header {	
     background-color: var(--black);
 	padding-bottom: 10px;
@@ -148,9 +146,7 @@ small{
 
 .grid-container {
 	display: grid;
-	gap: 40px;
-	margin-left: 20px;
-	margin-right: 20px;
+	grid-template-columns: repeat(1, 1fr);
 }
 
 figure {
@@ -273,93 +269,73 @@ footer{
 	padding-bottom: 15px;
 }
 
-header{
+header {
 	display: block;
 	text-align: center;
 } 
-
-.grid-container {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	margin: 0 75px;
-}
 
 li a {
 	width: 350px;
 }
 
-.big-nav {
-	display: none;
-}
-
 /*-------------------- MEDIA QUERY (medium) --------------------*/
 @media only screen and (min-width: 880px){
-
-	.small-nav {
-		display: flex;
-        justify-content: center;	
+	h1{
+		text-align: left;
+		margin-left: 120px;
+		margin-right: 120px;
 	}
 
-	.fruits-link {
-		margin-right: 100px;
+	main {
+		margin-left: 120px;
+		margin-right: 120px;
 	}
 
-	header {
-		grid-template-columns: 100%
+	figure {
+		margin: 0;
 	}
 
 	.grid-container {
 		grid-template-columns: repeat(2, 1fr);
-		margin: 0 75px;}
-
-	.contact{
-		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
 	}
 
-	.contact-grid {
-		display: flex;
-        flex-direction: column;
-	}
-	
-	.hours-grid {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
+	.form-field input {
+		width: 500px;
 	}
 
-	nav ul{
-		display: flex;
+	form > input {
+		width: 300px;
 	}
 }
 
 /*-------------------- MEDIA QUERY (large) --------------------*/
 @media only screen and (min-width: 1300px){
-
-	header{
-		display: grid;
-		grid-template-columns: 40% 60%;
-	}
-
-	nav ul{
-		display: flex;
-	}
-	
-	.title{
-		display: block;
-		text-align: left;
-	}
-
-	.big-nav {
-		display: flex;
-		justify-content: flex-end;
-	}
-
-	.small-nav {
-		display: none;
-	}
-	
 	.grid-container {
 		grid-template-columns: repeat(3, 1fr);
-		margin: 0 75px;
-		gap: 40px 80px;
 	}	
+
+	h1{
+		text-align: left;
+		margin-left: 180px;
+		margin-right: 180px;
+	}
+
+	main {
+		margin-left: 180px;
+		margin-right: 180px;
+	}
+
+	nav {
+		justify-content: flex-end;
+		margin-right: 180px;
+	}
+
+	.form-field input {
+		width: 750px;
+	}
+
+	form > input {
+		width: 400px;
+	}
 }
